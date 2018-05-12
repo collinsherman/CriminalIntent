@@ -135,15 +135,13 @@ public class CrimeFragment extends Fragment {
     }
 
     private void updateDate() {
-        Date date = new Date();
-        date = mCrime.getDate();
+        Date date = mCrime.getDate();
         mDateButton.setText(df.format("EEEE, MMM dd, yyyy", date).toString());
 
     }
 
     private void updateTime() {
-        Date time = new Date();
-        time = mCrime.getTime();
+        Date time = mCrime.getTime();
         mTimeButton.setText(df.format("h:mm a", time).toString());
     }
 }
